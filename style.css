@@ -55,6 +55,7 @@ footer {
 .other-things {
     float:right;
     margin-top: -10px;
+    margin-bottom: 30px;
 }
 
 hr {
@@ -87,19 +88,45 @@ hr {
     border-color:#39394b;
 }
 
+@media (max-width: @screen-xs) {
+    body{font-size: 8px;}
+}
+
+@media (max-width: @screen-sm) {
+    body{font-size: 10px;}
+}
+
+.h1 {
+    font-szie: 1.6em
+}
+
+.h2 {
+    font-szie: 1.4em
+}
+
+.h3 {
+    font-szie: 1.2em
+}
+
+.h4 {
+    font-szie: 1em
+}
+
 .text {
     display: none;
-    height: 50%;
-    width: 91%;
-    margin-left:15px;
-    border-style: solid;
-    border-color: #696988;
+    overflow-y: scroll;
+    height:200px;
+    width: 95%;
+    margin-right:5%;
     position: absolute;
-    bottom: 10px;
+    bottom: 14px;
     padding: 10px;
-    padding-top: 0px;
-    font-size: 1.3em;
+    padding-top: 0px;    
     color: black;
     background: #ffffff;
     z-index: 1;  
+}
+
+.row {
+    padding-top:15px;
 }
